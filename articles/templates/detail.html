@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>detail</title>
+</head>
+<body>
+<h1> Detail </h1>
+<h2> In this part i will explain more about myself </h2>
+<h3> {{title}} </h3>
+<h4> {{name}} </h4>
+<h5> {{number}} </h5>
+{{Article}}
+
+<ul>
+	{% for x in articles %}
+		<a href="{% url 'article_list' article_id=article.id %}"> <h1> {{x.title}} </h1> </a>
+		<small> {{x.content}} </small>
+	{% endfor %}
+</ul>
+</body>
+</html>
