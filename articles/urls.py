@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.urls import path
 
 from articles import views
+# this is a urls page
 
 urlpatterns = [
     path('create/', views.articles_create, name= 'articles_create'),

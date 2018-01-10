@@ -4,7 +4,7 @@ from django.shortcuts import render
 import random
 from .models import Article
 
-
+# this is my view page
 # Create your views here.
 def articles_create(request):
 	return render(request,'home.html', {})
@@ -22,7 +22,7 @@ def articles_detail(request):
 
 def articles_list(request, article_id):
 	thing = Article.objects.get(id= article_id)
-	
+
 	context = { "thing" :thing 
 	}
 	
